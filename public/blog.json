@@ -1,0 +1,65 @@
+[
+  {
+    "Cover_images": "https://i.postimg.cc/jdMqR7Dd/Rectangle-2.png",
+    "Course_Name": "Introduction to Python OOP",
+    "Course_details": "Fundamental concepts of Python, problem-solving, and algorithm development.",
+    "Course_price": "99.99",
+    "Course_Credit": 3
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/59wqKx6m/Rectangle-2-1.png",
+    "Course_Name": "Introduction to Storage",
+    "Course_details": "Primary Storage (Memory): This includes RAM (Random Access Memory) and other forms of volatile memory that provide fast access to data for the CPU but lose their contents when power is turned off.",
+    "Course_price": "129.99",
+    "Course_Credit": 4
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/gktwN5qD/Rectangle-2-2.png",
+    "Course_Name": "C programming Basics",
+    "Course_details": "C uses a syntax similar to other programming languages like C++, Java, and C#.Statements in C are terminated by a semicolon (;).",
+    "Course_price": "79.99",
+    "Course_Credit": 3
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/gJB9fvMf/Rectangle-2-3.png",
+    "Course_Name": "Algorithm Basic",
+    "Course_details": "Algorithms have a clear and unambiguous set of instructions that guide the execution of a task. Each step must be precisely defined, leaving no room for ambiguity.",
+    "Course_price": "109.99",
+    "Course_Credit": 4
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/X7633gNb/Rectangle-2-4.png",
+    "Course_Name": "Introduction to C++",
+    "Course_details": "C++ is a powerful and versatile programming language that was developed as an extension of the C programming language.  ",
+    "Course_price": "149.99",
+    "Course_Credit": 4
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/h4L4XY5j/Rectangle-2-5.png",
+    "Course_Name": "Software Engineering Division Lines of research and Development ",
+    "Course_details": "Research on secure coding practices.Development of tools for static and dynamic code analysis to identify and fix security vulnerabilities.",
+    "Course_price": "119.99",
+    "Course_Credit": 3
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/YC4JWGC3/Rectangle-2-6.png",
+    "Course_Name": "Software Engineering Practices",
+    "Course_details": "Software development life cycle, agile methodologies, and code quality assurance.",
+    "Course_price": "139.99",
+    "Course_Credit": 4
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/3NVZ5RQ8/Rectangle-3.png",
+    "Course_Name": "Data Structure ",
+    "Course_details": "A data structure is a way of organizing and storing data to perform operations efficiently. It defines the relationship between the data.",
+    "Course_price": "129.99",
+    "Course_Credit": 3
+  },
+  {
+    "Cover_images": "https://i.postimg.cc/pVh1W9qY/Rectangle-3-1.png",
+    "Course_Name": "Mobile App Development",
+    "Course_details": "Building mobile applications for iOS and Android platforms.",
+    "Course_price": "109.99",
+    "Course_Credit": 3
+  }
+]
