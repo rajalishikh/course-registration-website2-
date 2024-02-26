@@ -1,7 +1,7 @@
 const Bookmarks = () => {
     return (
-        <div>
-            <h2>Here is my Book marks </h2>
+        <div className="">
+            <h2 className="text-center">Here is my Book marks </h2>
             
         </div>
     );

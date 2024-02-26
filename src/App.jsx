@@ -11,7 +11,7 @@ function App() {
     <>
      
       <Header></Header>
-      <div className='flex '>
+      <div className='lg:flex   lg:max-w-8xl  lg:ml-32 gap-24  '>
         <Cards></Cards>
         <Bookmarks></Bookmarks>
       </div>

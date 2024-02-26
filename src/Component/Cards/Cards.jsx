@@ -10,7 +10,7 @@ const Cards = () => {
         
     },[])
     return (
-        <div className="w-1/3 grid grid-cols-3 gap-5">
+        <div className=" lg:w-2/3  lg:grid lg:grid-cols-3  lg:gap-5 ">
             {
                 cards.map((item,idx)=><Card key={idx} Card={item}></Card>)
             }
