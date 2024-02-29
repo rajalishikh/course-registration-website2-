@@ -2,11 +2,12 @@ import PropTypes from 'prop-types';
 import { IoMdBook, } from "react-icons/io";
 import { TfiMoney } from "react-icons/tfi";
 import './Card.css';
-const Card = ({ Card }) => {
-    console.log(Card)
+const Card = ({ Card, handleClick }) => {
+    
+   
     const { Cover_images, Course_Name, Course_details, Course_price, Course_Credit } = Card;
     return (
-        <div  >
+        <div className='bg-white rounded-md'  >
             <img className=' lg:w-full' src={Cover_images} alt="" />
             {/* course heading and details  */}
             <div className='mt-2'>
@@ -20,8 +21,8 @@ const Card = ({ Card }) => {
                 
             </div>
             {/* The Button section  */}
-            <div className='text-center lg:m-5  lg:p-2 bg-blue-700 text-white rounded-md mt-2 '>
-            <button>Select</button>
+            <div className='text-center  '>
+            <button onClick={()=> handleClick(Card,Course_Credit)} className='lg:m-5  lg:p-2 bg-blue-700 text-white rounded-md mt-2 w-36'>Select</button>
             </div>
             
         </div>
@@ -30,5 +31,9 @@ const Card = ({ Card }) => {
 
 export default Card;
 Card.propTypes = {
-    Card:PropTypes.object.isRequired
+    Card: PropTypes.object.isRequired,
+    handleClick: PropTypes.func.isRequired,
+    
+    
+    
 }

@@ -1,0 +1,27 @@
+.text {
+  color: rgb(28, 27, 27);
+  font-size: 20px;
+  font-weight: 700;
+}
+.div {
+  border-radius: 12px;
+
+  background: rgb(255, 255, 255);
+  /* Rectangle 3 */
+
+  width: 312px;
+  height: 355px;
+  left: 1068px;
+  right: 60px;
+  top: 121px;
+  bottom: 983px;
+}
+.Credit {
+  color: rgb(47, 128, 237);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
