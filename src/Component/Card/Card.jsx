@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { IoMdBook, } from "react-icons/io";
 import { TfiMoney } from "react-icons/tfi";
 import './Card.css';
-const Card = ({ Card, handleClick }) => {
+const Card = ({ Card, handleClick, }) => {
     
    
     const { Cover_images, Course_Name, Course_details, Course_price, Course_Credit } = Card;

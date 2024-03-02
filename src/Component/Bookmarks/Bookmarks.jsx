@@ -2,14 +2,14 @@ import PropTypes from 'prop-types';
 import Bookmark from '../Bookmark/Bookmark';
 import './Bookmarks.css';
 
-const Bookmarks = ({ bookmarks, creditHour }) => {
+const Bookmarks = ({ bookmarks, creditHour,setRemainingHour }) => {
     
     
    
 
     return (
         <div className='div '>
-            <h2 className='Credit mt-2 mb-4 border-b-2'>Credit Hour Remaining </h2>
+            <h2 className='Credit mt-2 mb-4 border-b-2'>Credit Hour Remaining :{setRemainingHour} </h2>
 
             <h2 className=" text ">Course Name   </h2>
             {
@@ -29,5 +29,6 @@ const Bookmarks = ({ bookmarks, creditHour }) => {
 export default Bookmarks;
 Bookmarks.propTypes = {
     bookmarks: PropTypes.object.isRequired,
-    creditHour:PropTypes.array.isRequired
+    creditHour: PropTypes.array.isRequired,
+    setRemainingHour:PropTypes.element.isRequired
 }

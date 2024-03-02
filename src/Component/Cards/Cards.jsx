@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
-const Cards = ({ handleClick}) => {
+const Cards = ({ handleClick,}) => {
     const [cards, setCards] = useState([])
     useEffect(() => {
         fetch('blog.json')
@@ -22,5 +22,7 @@ const Cards = ({ handleClick}) => {
 
 export default Cards;
 Cards.propTypes = {
-    handleClick:PropTypes.func.isRequired
+    handleClick: PropTypes.func.isRequired,
+    
+    
 }
