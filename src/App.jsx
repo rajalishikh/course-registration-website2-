@@ -1,9 +1,10 @@
-
-import { useState } from 'react'
-import './App.css'
-import Bookmarks from './Component/Bookmarks/Bookmarks'
-import Cards from './Component/Cards/Cards'
-import Header from './Component/Header/Header'
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import './App.css';
+import Bookmarks from './Component/Bookmarks/Bookmarks';
+import Cards from './Component/Cards/Cards';
+import Header from './Component/Header/Header';
 
 
 function App() {
@@ -11,24 +12,32 @@ function App() {
   const [creditHour, setCreditHour] = useState(0);
   const [remainingHour, setRemainingHour] = useState(20);
 
+  const notify = () => {
+    toast('Your credit limit is only 20')
+  }
+
   
 
   const handleClick = (nameCourse,Course_Credit) => {
     const newBookMarks = [...bookmarks, nameCourse];
+
     setBookmarks(newBookMarks);
     console.log(nameCourse, Course_Credit, creditHour);
-    if (creditHour < 20) {
+
+    // condition part
+    if ((creditHour+Course_Credit) <= 20) {
       
       setCreditHour(creditHour + Course_Credit);
-      if (creditHour>0) {
-        setRemainingHour(remainingHour - creditHour);
+      if (remainingHour-Course_Credit >=0) {
+        setRemainingHour(remainingHour - Course_Credit);
       } else {
-        console.log('you can data');
+        setCreditHour(notify);
       }
       
 
     } else {
-      setCreditHour('No data ')
+      setCreditHour(notify)
+      
     }
     
     
@@ -44,6 +53,7 @@ function App() {
       <div className='lg:flex   lg:max-w-8xl  lg:ml-32 gap-24  '>
         <Cards handleClick={handleClick}></Cards>
         <Bookmarks bookmarks={bookmarks} creditHour={creditHour} setRemainingHour={remainingHour}></Bookmarks>
+        <ToastContainer></ToastContainer>
       </div>
       
       
