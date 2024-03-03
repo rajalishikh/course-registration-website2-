@@ -5,7 +5,7 @@ import './Card.css';
 const Card = ({ Card, handleClick, }) => {
     
    
-    const { Cover_images, Course_Name, Course_details, Course_price, Course_Credit } = Card;
+    const { Cover_images, Course_Name, Course_details, Course_price, Course_Credit,id } = Card;
     return (
         <div className='bg-white rounded-md'  >
             <img className=' lg:w-full' src={Cover_images} alt="" />
@@ -22,7 +22,7 @@ const Card = ({ Card, handleClick, }) => {
             </div>
             {/* The Button section  */}
             <div className='text-center  '>
-            <button onClick={()=> handleClick(Card,Course_Credit)} className='lg:m-5  lg:p-2 bg-blue-700 text-white rounded-md mt-2 w-36'>Select</button>
+            <button onClick={()=> handleClick(Card,Course_Credit,id)} className='lg:m-5  lg:p-2 bg-blue-700 text-white rounded-md mt-2 w-36'>Select</button>
             </div>
             
         </div>

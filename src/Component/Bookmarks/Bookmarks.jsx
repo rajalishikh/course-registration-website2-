@@ -29,6 +29,6 @@ const Bookmarks = ({ bookmarks, creditHour,setRemainingHour }) => {
 export default Bookmarks;
 Bookmarks.propTypes = {
     bookmarks: PropTypes.object.isRequired,
-    creditHour: PropTypes.array.isRequired,
-    setRemainingHour:PropTypes.element.isRequired
+    creditHour: PropTypes.object.isRequired,
+    setRemainingHour:PropTypes.object.isRequired
 }

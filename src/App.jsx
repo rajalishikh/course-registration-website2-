@@ -11,18 +11,35 @@ function App() {
   const [bookmarks, setBookmarks] = useState([]);
   const [creditHour, setCreditHour] = useState(0);
   const [remainingHour, setRemainingHour] = useState(20);
+  // one toast for course credit 
 
-  const notify = () => {
-    toast('Your credit limit is only 20')
-  }
+  
+  
 
   
 
-  const handleClick = (nameCourse,Course_Credit) => {
+  const handleClick = (nameCourse, Course_Credit, id) => {
+   
     const newBookMarks = [...bookmarks, nameCourse];
+    // start the show name part of course in only one time 
+    
+    const findId = bookmarks.find(item => item.id == id);
+ 
+    console.log(findId);
+    if (findId ) {
+     return toast.success('All ready take this course')
+    } else {
+      
+      setBookmarks(newBookMarks);
+      
+    }
+      
+    // end the show name part of course in only one time 
+    
+    
 
-    setBookmarks(newBookMarks);
-    console.log(nameCourse, Course_Credit, creditHour);
+    
+    
 
     // condition part
     if ((creditHour+Course_Credit) <= 20) {
@@ -31,12 +48,12 @@ function App() {
       if (remainingHour-Course_Credit >=0) {
         setRemainingHour(remainingHour - Course_Credit);
       } else {
-        setCreditHour(notify);
+        return toast.success('Your Course Limit is Over ')
       }
       
 
     } else {
-      setCreditHour(notify)
+      return toast.success('Your Limit is 20 Credit')
       
     }
     
