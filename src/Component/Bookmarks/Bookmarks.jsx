@@ -15,8 +15,8 @@ const Bookmarks = ({ bookmarks, creditHour,setRemainingHour }) => {
             {
                 bookmarks.map((item2,idx)=><Bookmark key={idx} bookmark={item2}></Bookmark>)
             }
-            <p className='border-t-2 mt-2'>
-            Total Credit hour{ creditHour}
+            <p className='border-t-2 mt-2 text'>
+            Total Credit hour : { creditHour}
             </p>
             
             

@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
+import './Bookmark.css';
 const Bookmark = ({ bookmark }) => {
     const { Course_Name } = bookmark;
 
     return (
         <div >
-            <p > {Course_Name}</p>
+            <p className='Book ' > {Course_Name}</p>
            
             
         </div>
