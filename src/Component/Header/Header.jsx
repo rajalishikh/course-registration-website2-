@@ -1,7 +1,8 @@
+import './Header.css';
 const Header = () => {
     return (
         <div>
-            <h1 className="text-3xl text-center m-8">Course Registration </h1>
+            <h1 className="text-3xl text-center m-8 header">Course Registration </h1>
             
         </div>
     );
