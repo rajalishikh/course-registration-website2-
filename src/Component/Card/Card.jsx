@@ -17,7 +17,7 @@ const Card = ({ Card, handleClick, }) => {
             {/* The price section  */}
             <div className='p flex mt-2'>
                 <p className='mt-1'><TfiMoney></TfiMoney></p> <p>price :{Course_price}</p>
-                <p className='mt-1 ml-2' ><IoMdBook></IoMdBook></p><p>Credit :{ Course_Credit}hr</p>
+                <p className='mt-1 ml-2 text-black' ><IoMdBook></IoMdBook></p><p>Credit :{ Course_Credit}hr</p>
                 
             </div>
             {/* The Button section  */}
