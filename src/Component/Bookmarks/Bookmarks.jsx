@@ -12,7 +12,7 @@ const Bookmarks = ({ bookmarks, creditHour,setRemainingHour }) => {
             <h2 className='Credit mt-2 mb-4 border-b-2'>Credit Hour Remaining :{setRemainingHour} </h2>
 
             <h2 className=" text  ">Course Name   </h2>
-            <h1>rrrr</h1>
+            
             {
                 bookmarks.map((item2,idx)=><Bookmark key={idx} bookmark={item2}></Bookmark>)
             }
